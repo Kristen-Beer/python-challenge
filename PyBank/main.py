@@ -15,4 +15,4 @@ with open(budgetdata_csv) as csv_file:
     for row in csv_reader:
         count += 1
 
-print("Number of rows =", count)
+print("Total Months =", count)

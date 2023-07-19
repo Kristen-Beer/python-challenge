@@ -1,4 +1,4 @@
-#Find average change in Profits/losses
+
 import csv
 
 budgetdata_csv = r"C:\\Users\krism\Documents\School\Module3Challenge\python-challenge\Starter_Code\PyBank\Resources\\budget_data.csv"
@@ -37,5 +37,20 @@ with open(budgetdata_csv) as csv_file:
     print("Total months =", count)
     print("Total:", total_Profits_losses)
     print("Average Change:", final_average_change)
+
+
+      #Specify the file to write to
+output_file_path = r'C:\\Users\krism\Documents\School\Module3Challenge\python-challenge\PyBank\\PyBank.txt'
+with open(output_file_path, 'w') as file:
+    file.write("Financial Analysis"+'\n')
+    file.write("----------------------"+'\n')
+    file.write("Total months =" + str(count) +'\n')
+    file.write("Total:" + str(total_Profits_losses) +'\n')
+    file.write("Total:"+ str(total_Profits_losses) + '\n')
+    file.write("Average Change:"+ str(final_average_change) +'\n')
+   
+
+    print('Output has been written to PyBank.txt successfully')
+  
 
   

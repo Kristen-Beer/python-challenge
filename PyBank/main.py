@@ -38,5 +38,4 @@ with open(budgetdata_csv) as csv_file:
     print("Total:", total_Profits_losses)
     print("Average Change:", final_average_change)
 
-    #Specify the file to write to
-    
+  

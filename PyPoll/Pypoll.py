@@ -1,6 +1,6 @@
 import csv
 #File path for csv:
-election_data_csv = r'C:\\Users\krism\Documents\School\Module3Challenge\python-challenge\Starter_Code\PyPoll\Resources\\election_data.csv'
+election_data_csv = r'C:\\Users\krism\Documents\School\Module3Challenge\python-challenge\PyPoll\PyPoll_Resources\PyPoll\Resources\\election_data.csv'
 
 #Open and read the csv
 with open(election_data_csv) as csv_file:
@@ -30,22 +30,21 @@ with open(election_data_csv) as csv_file:
 
 
 
-    for row in reader:
-        #Total votes
-        count = count + 1
+        for row in reader:
+            #Total votes
+            count = count + 1
 
         #Grab each name
-        candidate_name = row["Candidate"]
+            candidate_name = row["Candidate"]
         #Add the name if it isn't in the list
-        if candidate_name not in candidate_list:
-            candidate_list.append(candidate_name)
-            #Track each candidate's votes
-            candidate_votes[candidate_name] = 0
+            if candidate_name not in candidate_list:
+                candidate_list.append(candidate_name)
+             #Track each candidate's votes
+                candidate_votes[candidate_name] = 0
 
     #Add to the count of the votes
     candidate_votes[candidate_name] = candidate_votes[candidate_name]+1
 
-    for candidate in candidate_votes
 
     print("Election Results")
     print(f"Total Votes: ", count)
@@ -53,14 +52,13 @@ with open(election_data_csv) as csv_file:
 
 
     #Specify the file to write to
-output_file_path = 'PyPoll\PyPoll_Analysis\PyPoll_Analysis.txt'
+output_file_path = r'C:\\Users\krism\Documents\School\Module3Challenge\python-challenge\PyPoll\PyPoll_Analysis\\PyPoll_Analysis.txt'
 with open(output_file_path, 'w') as file:
     file.write("Election Results"+'\n')
     file.write("----------------------------"+'\n')
     file.write("Total Votes =" + str(count) +'\n')
     file.write("-----------------------------"+'\n')
- ')
-   
+ 
 
     print('Output has been written to PyBank.txt successfully')
     

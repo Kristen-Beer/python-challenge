@@ -1,7 +1,7 @@
 
 import csv
 
-budgetdata_csv = r"C:\\Users\krism\Documents\School\Module3Challenge\python-challenge\Starter_Code\PyBank\Resources\\budget_data.csv"
+budgetdata_csv = r"C:\\Users\krism\Documents\School\Module3Challenge\python-challenge\PyBank\PyBank_Resources\\budget_data.csv"
 
 # Open and read the csv
 with open(budgetdata_csv) as csv_file:
